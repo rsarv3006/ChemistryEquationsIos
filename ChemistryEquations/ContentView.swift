@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let thing = chemistry_equations_backbone.get_equations()
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
+            
             Text("Hello, world!")
         }
         .padding()
