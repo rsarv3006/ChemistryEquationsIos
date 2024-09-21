@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import ChemistryEquationsBackbone
 
 struct ContentView: View {
-    let thing = chemistry_equations_backbone.get_equations()
+    let equations = getEquations()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +18,16 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             
             Text("Hello, world!")
+            
+            List {
+                ForEach(equations, id: \.id) {section in
+                    Text("Title: \(section.title)")
+                    ForEach(section.equations, id: \.id) {section in
+                        Text("Equation: \(section.title)")
+                    }
+                }
+            }
+            
         }
         .padding()
     }

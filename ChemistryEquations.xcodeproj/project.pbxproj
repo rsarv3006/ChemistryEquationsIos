@@ -11,6 +11,8 @@
 		780753C82C93869400C25231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780753C72C93869400C25231 /* ContentView.swift */; };
 		780753CA2C93869500C25231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780753C92C93869500C25231 /* Assets.xcassets */; };
 		780753CD2C93869500C25231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780753CC2C93869500C25231 /* Preview Assets.xcassets */; };
+		780E2D062C9D148000B62B4E /* ChemistryEquationsBackbone in Frameworks */ = {isa = PBXBuildFile; productRef = 780E2D052C9D148000B62B4E /* ChemistryEquationsBackbone */; };
+		780E2D092C9F6F7200B62B4E /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 780E2D082C9F6F7200B62B4E /* LaTeXSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,6 @@
 		780753C92C93869500C25231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780753CC2C93869500C25231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		780753DB2C9388B200C25231 /* ChemistryEquations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChemistryEquations-Bridging-Header.h"; sourceTree = "<group>"; };
-		780753EC2C93D5F100C25231 /* ChemistryEquationsBackbone.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ChemistryEquationsBackbone.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780E2D062C9D148000B62B4E /* ChemistryEquationsBackbone in Frameworks */,
+				780E2D092C9F6F7200B62B4E /* LaTeXSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +77,6 @@
 		780753D32C9386D000C25231 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				780753EC2C93D5F100C25231 /* ChemistryEquationsBackbone.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +97,10 @@
 			dependencies = (
 			);
 			name = ChemistryEquations;
+			packageProductDependencies = (
+				780E2D052C9D148000B62B4E /* ChemistryEquationsBackbone */,
+				780E2D082C9F6F7200B62B4E /* LaTeXSwiftUI */,
+			);
 			productName = ChemistryEquations;
 			productReference = 780753C22C93869400C25231 /* ChemistryEquations.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +130,10 @@
 				Base,
 			);
 			mainGroup = 780753B92C93869400C25231;
+			packageReferences = (
+				780E2D042C9D148000B62B4E /* XCRemoteSwiftPackageReference "chemistry-equations-backbone-spm" */,
+				780E2D072C9F6F7100B62B4E /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */,
+			);
 			productRefGroup = 780753C32C93869400C25231 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +382,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		780E2D042C9D148000B62B4E /* XCRemoteSwiftPackageReference "chemistry-equations-backbone-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rsarv3006/chemistry-equations-backbone-spm";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		780E2D072C9F6F7100B62B4E /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/colinc86/LaTeXSwiftUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		780E2D052C9D148000B62B4E /* ChemistryEquationsBackbone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 780E2D042C9D148000B62B4E /* XCRemoteSwiftPackageReference "chemistry-equations-backbone-spm" */;
+			productName = ChemistryEquationsBackbone;
+		};
+		780E2D082C9F6F7200B62B4E /* LaTeXSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 780E2D072C9F6F7100B62B4E /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */;
+			productName = LaTeXSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 780753BA2C93869400C25231 /* Project object */;
 }

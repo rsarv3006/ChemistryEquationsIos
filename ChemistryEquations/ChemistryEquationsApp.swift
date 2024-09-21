@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ChemistryEquationsBackbone
 
 @main
 struct ChemistryEquationsApp: App {
