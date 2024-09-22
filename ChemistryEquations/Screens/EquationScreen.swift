@@ -65,7 +65,7 @@ struct EquationScreen: View {
                     let inputValues = values
                     _ = inputValues.dropLast()
 
-//                    values[equation.fieldLabels.count - 1] = equation.equation(inputValues)
+                    values[equation.fieldLabels.count - 1] = calculateEquation(equationId: equation.id, input: inputValues)
                 }, label: {
                     Text("Calculate")
                         .font(.title)
