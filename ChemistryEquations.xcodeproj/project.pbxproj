@@ -13,6 +13,14 @@
 		780753CD2C93869500C25231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780753CC2C93869500C25231 /* Preview Assets.xcassets */; };
 		780E2D062C9D148000B62B4E /* ChemistryEquationsBackbone in Frameworks */ = {isa = PBXBuildFile; productRef = 780E2D052C9D148000B62B4E /* ChemistryEquationsBackbone */; };
 		780E2D092C9F6F7200B62B4E /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 780E2D082C9F6F7200B62B4E /* LaTeXSwiftUI */; };
+		780E2D0C2C9F9E4600B62B4E /* RoundedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D0B2C9F9E4600B62B4E /* RoundedBorderView.swift */; };
+		780E2D0F2C9F9EB400B62B4E /* HomeScreenEquationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D0E2C9F9EB400B62B4E /* HomeScreenEquationButton.swift */; };
+		780E2D112C9FA02700B62B4E /* SettingsInAppPurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D102C9FA02700B62B4E /* SettingsInAppPurchases.swift */; };
+		780E2D142C9FA33A00B62B4E /* EquationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D132C9FA33A00B62B4E /* EquationScreen.swift */; };
+		780E2D162C9FA54600B62B4E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D152C9FA54600B62B4E /* HomeScreen.swift */; };
+		780E2D182C9FA57F00B62B4E /* EquationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D172C9FA57F00B62B4E /* EquationTabView.swift */; };
+		780E2D1A2C9FA5AB00B62B4E /* EquationDescriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D192C9FA5AB00B62B4E /* EquationDescriptionScreen.swift */; };
+		780E2D1C2C9FA5BF00B62B4E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E2D1B2C9FA5BF00B62B4E /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		780753C92C93869500C25231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780753CC2C93869500C25231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		780753DB2C9388B200C25231 /* ChemistryEquations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChemistryEquations-Bridging-Header.h"; sourceTree = "<group>"; };
+		780E2D0B2C9F9E4600B62B4E /* RoundedBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderView.swift; sourceTree = "<group>"; };
+		780E2D0E2C9F9EB400B62B4E /* HomeScreenEquationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenEquationButton.swift; sourceTree = "<group>"; };
+		780E2D102C9FA02700B62B4E /* SettingsInAppPurchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInAppPurchases.swift; sourceTree = "<group>"; };
+		780E2D132C9FA33A00B62B4E /* EquationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationScreen.swift; sourceTree = "<group>"; };
+		780E2D152C9FA54600B62B4E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		780E2D172C9FA57F00B62B4E /* EquationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationTabView.swift; sourceTree = "<group>"; };
+		780E2D192C9FA5AB00B62B4E /* EquationDescriptionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationDescriptionScreen.swift; sourceTree = "<group>"; };
+		780E2D1B2C9FA5BF00B62B4E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,9 @@
 		780753C42C93869400C25231 /* ChemistryEquations */ = {
 			isa = PBXGroup;
 			children = (
+				780E2D122C9FA32E00B62B4E /* Screens */,
+				780E2D0D2C9F9E9C00B62B4E /* Components */,
+				780E2D0A2C9F9E3000B62B4E /* Modifiers */,
 				780753C52C93869400C25231 /* ChemistryEquationsApp.swift */,
 				780753C72C93869400C25231 /* ContentView.swift */,
 				780753C92C93869500C25231 /* Assets.xcassets */,
@@ -79,6 +98,35 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780E2D0A2C9F9E3000B62B4E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				780E2D0B2C9F9E4600B62B4E /* RoundedBorderView.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		780E2D0D2C9F9E9C00B62B4E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				780E2D0E2C9F9EB400B62B4E /* HomeScreenEquationButton.swift */,
+				780E2D102C9FA02700B62B4E /* SettingsInAppPurchases.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		780E2D122C9FA32E00B62B4E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				780E2D132C9FA33A00B62B4E /* EquationScreen.swift */,
+				780E2D152C9FA54600B62B4E /* HomeScreen.swift */,
+				780E2D172C9FA57F00B62B4E /* EquationTabView.swift */,
+				780E2D192C9FA5AB00B62B4E /* EquationDescriptionScreen.swift */,
+				780E2D1B2C9FA5BF00B62B4E /* SettingsScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +208,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780E2D182C9FA57F00B62B4E /* EquationTabView.swift in Sources */,
+				780E2D112C9FA02700B62B4E /* SettingsInAppPurchases.swift in Sources */,
+				780E2D0F2C9F9EB400B62B4E /* HomeScreenEquationButton.swift in Sources */,
+				780E2D162C9FA54600B62B4E /* HomeScreen.swift in Sources */,
 				780753C82C93869400C25231 /* ContentView.swift in Sources */,
+				780E2D0C2C9F9E4600B62B4E /* RoundedBorderView.swift in Sources */,
+				780E2D1A2C9FA5AB00B62B4E /* EquationDescriptionScreen.swift in Sources */,
 				780753C62C93869400C25231 /* ChemistryEquationsApp.swift in Sources */,
+				780E2D1C2C9FA5BF00B62B4E /* SettingsScreen.swift in Sources */,
+				780E2D142C9FA33A00B62B4E /* EquationScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
